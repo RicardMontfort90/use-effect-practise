@@ -32,6 +32,7 @@ const handleDecrease = () => {
 
 
 
+  
   return (
     <div>
       <p>Counter: <span className={dynamicClass}>{count}</span></p>
