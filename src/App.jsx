@@ -7,11 +7,9 @@ function App() {
   const [showCounter, setShowCounter] = useState(true)
 
 // Iteration 4 
-
   const handleCounter = () => {
     setShowCounter(prev => !prev)
   }
-
 
   return (
     <div className="App">
