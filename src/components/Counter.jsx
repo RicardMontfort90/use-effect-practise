@@ -16,7 +16,15 @@ const handleDecrease = () => {
 }
   // Second and Fourth iteration
 
+  useEffect(() => {
+    setCount(Math.floor(Math.random()*10));
 
+    return () => {
+      setCount(0);
+      setDynamicClass('text');
+      console.log('All clean here. Count:', count, 'Class:', dynamicClass);
+    }
+  }, []);
 
   // Third iteration
 
@@ -31,8 +39,6 @@ const handleDecrease = () => {
   }, [count])
 
 
-
-  
   return (
     <div>
       <p>Counter: <span className={dynamicClass}>{count}</span></p>
