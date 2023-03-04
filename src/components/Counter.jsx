@@ -16,7 +16,21 @@ const handleDecrease = () => {
 }
   // Second and Fourth iteration
 
+
+
   // Third iteration
+
+  useEffect(() => {
+    if (count > 5) {
+      setDynamicClass('green');
+    } else if (count > 0) {
+      setDynamicClass('orange');
+    } else {
+      setDynamicClass('red')
+    }
+  }, [count])
+
+
 
   return (
     <div>
